@@ -1,1 +1,240 @@
-My Page
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+        <link rel="stylesheet" href="css/focushighlight.css">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>My experimental presentation</h1>
+					<h3>Made with the help of <a href="https://github.com/hakimel/reveal.js">reveal.js</a></h3>
+					<p>
+						<small>Manipulated by Mykola Gurov</small>
+					</p>
+				</section>
+
+				<section id="hello-slide">
+					<h2>Hello There</h2>
+					<p>
+					   Hello, world!
+					</p>
+				</section>
+				
+				<section>
+                    
+                    <section data-transition="none">
+                        <h3>Code highlighting</h3>
+                        <p>Reason #2 for use reveal.js</p>
+                        <pre><code class="hlgo" data-trim>
+scene.AddNewSequence(
+    &tweens.Step{
+        What: arrow.rotate(-180),
+        Duration: 2 * time.Second,
+        Easing: tweens.EaseOutBounce
+    },
+    &tweens.Step{What: arrow.rotate(0),Duration: 2 * time.Second},
+).Repeat()
+                        </code></pre>
+                        <small class="fragment">Scroll down to learn more</small>
+                    </section>
+
+                    <section data-transition="none">
+                        <p>Customized to draw attention</p>
+                        <pre><code class="hlgo" data-trim data-noescape data-escape-2>
+<dim>scene.AddNewSequence(</dim>
+    &tweens.Step{
+        What: arrow.rotate(-180),
+        Duration: 2 * time.Second,
+        Easing: tweens.EaseOutBounce
+    },<dim>
+    &tweens.Step{What: arrow.rotate(0),Duration: 2 * time.Second},
+).Repeat()</dim>
+                        </code></pre>
+                    </section>
+                    
+                    <section data-transition="none">
+                        <p>And shift it</p>
+                        <pre><code class="hlgo" data-trim data-noescape data-escape-2>
+<dim>scene.AddNewSequence(
+    &tweens.Step{
+        What: arrow.rotate(-180),
+        Duration: 2 * time.Second,
+        Easing: tweens.EaseOutBounce
+    },</dim>
+    &tweens.Step{What: arrow.rotate(0),Duration: 2 * time.Second},
+<dim>).Repeat()</dim>
+                        </code></pre>
+                    </section>
+                    
+                    <section data-transition="none">
+                        <p>Xml-based code highlighting is trickier for this technique</p>
+                        <p>Due to the way the <a href="https://css-tricks.com/almanac/properties/o/opacity/#Noteworthy">CSS opacity works</a></p>
+                        <p>Fully escaped <code>&lt;configuration&gt;</code> wraps the rest</p>
+                        <pre><code class="hlxml" data-trim>
+<configuration>
+    <watchInterval>500</watchInterval></dim>
+    <logDate>default</logDate>
+    <verbose>true</verbose>
+    <autoPull>always</autoPull>
+    <images>
+        ...
+    </images>
+</configuration>        
+                        </code></pre>
+                    </section>
+
+                    <section data-transition="none">
+                        <p>Xml-based code highlighting is trickier for this technique</p>
+                        <p>Due to the way the <a href="https://css-tricks.com/almanac/properties/o/opacity/#Noteworthy">CSS opacity works</a></p>
+                        <p>Non-escaped <code>&lt;configuration&gt;</code> cannot be dimmed</p>
+                        <pre><code class="hlxml" data-trim data-noescape data-escape-2>
+<dim><configuration>
+    <watchInterval>500</watchInterval></dim>
+    <logDate>default</logDate>
+    <dim><verbose>true</verbose>
+    <autoPull>always</autoPull>
+    <images>
+        ...
+    </images>
+</configuration></dim>        
+                        </code></pre>
+                    </section>
+
+
+				</section>
+
+				<section>
+					<h2>Touch Optimized</h2>
+					<p>
+						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
+					</p>
+                    <p class="fragment"> 
+                        <small>Although could admittedly work better</small>
+                    </p>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Markdown support
+
+						Write content using inline or external Markdown.
+						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+
+						```
+						<section data-markdown>
+						  ## Markdown support
+
+						  Write content using inline or external Markdown.
+						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+						</section>
+						```
+					</script>
+				</section>
+
+				<section>
+					<h2>Tabular Tables</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Item</th>
+								<th>Value</th>
+								<th>Quantity</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Apples</td>
+								<td>$1</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>Lemonade</td>
+								<td>$2</td>
+								<td>18</td>
+							</tr>
+							<tr>
+								<td>Bread</td>
+								<td>$3</td>
+								<td>2</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section id="pdf-export">
+					<h2>Export to PDF</h2>
+					<p>Presentations can be <a href="?print-pdf#pdf-export">exported to PDF</a></p>
+                    <p>From <a href="https://github.com/hakimel/reveal.js#pdf-export" target="blank">Chrome only</a></p>					
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+        <script src="js/focushighlight.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
