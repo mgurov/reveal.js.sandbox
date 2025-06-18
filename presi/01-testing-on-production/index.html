@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Testing on production - Mykola</title>
+
+	<link rel="stylesheet" href="/dist/reset.css">
+	<link rel="stylesheet" href="/dist/reveal.css">
+	<link rel="stylesheet" href="/dist/theme/black.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="/plugin/highlight/monokai.css">
+</head>
+
+<style>
+	.smaller {
+		font-size: 50%;
+	}
+</style>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<section data-auto-animate>
+				<h1>Testing on Production</h1>
+				<p class="fragment">Mykola V. Gurov</p>
+			</section>
+
+			<section data-auto-animate>
+				<p data-id="flags" style="font-size: 200%;"><span>🇺🇦</span></p>
+				<p data-id="mykola-gurov">Mykola V. Gurov</p>
+			</section>
+
+			<section data-auto-animate>
+				<p data-id="flags" style="font-size: 200%;"><span>🇺🇦</span><span>🇳🇱</span></p>
+				<p>Mykola V. Gurov</p>
+			</section>
+
+			<section data-auto-animate>
+				<p>Software developer</p>
+				<p data-id="flags" style="font-size: 200%;"><span>🇺🇦</span><span>🇳🇱</span></p>
+				<p>Mykola V. Gurov</p>
+			</section>
+
+			<section data-auto-animate>
+				<p>Software developer</p>
+				<p style="font-size: 200%;">T</p>
+			</section>
+
+			<section data-auto-animate>
+				<p>Software developer</p>
+				<p style="font-size: 200%;">T</p>
+				<p>Java Kotlin Go</p>
+				<p>React.js</p>
+			</section>
+
+			<section data-auto-animate>
+				<p>Software developer</p>
+				<p>navigation</p>
+				<p>e-commerce</p>
+				<p>insurance</p>
+			</section>
+
+			<section data-markdown>
+				### Image testing in production
+			</section>
+
+			<section data-auto-animate>
+				<h2>
+					<span>Testing</span>
+					<span>on</span>
+					<span>Production</span>
+				</h2>
+			</section>
+
+
+			<section data-auto-animate>
+				<h2>
+					<span>Testing</span>
+					<span style="color: #999;">on</span>
+					<span style="color: #999;">Production</span>
+				</h2>
+			</section>
+
+			<section data-auto-animate>
+				<h2>
+					<span>Testing</span>
+					<span style="color: #999;">on</span>
+					<span style="color: #999;">Production</span>
+				</h2>
+				<blockquote cite="https://en.wikipedia.org/wiki/Software_testing">
+					&ldquo;Software testing is an investigation conducted to provide stakeholders with information about the quality of the software product or service under test.&rdquo;
+				</blockquote>
+				<small>– Kaner, Cem (November 17, 2006). Exploratory Testing (PDF). Quality Assurance Institute Worldwide Annual Software Testing Conference. Orlando, FL. Retrieved November 22, 2014.</small>
+			</section>
+
+			<section data-auto-animate>
+				<h2>
+					<span style="color: #999;">Testing</span>
+					<span>on</span>
+					<span style="color: #999;">Production</span>
+				</h2>
+				<blockquote cite="https://en.wikipedia.org/wiki/Software_testing" style="color: black;">
+					&ldquo;Software testing is an investigation conducted to provide stakeholders with information about the quality of the software product or service under test.&rdquo;
+				</blockquote>
+				<small style="color: black;">– Kaner, Cem (November 17, 2006). Exploratory Testing (PDF). Quality Assurance Institute Worldwide Annual Software Testing Conference. Orlando, FL. Retrieved November 22, 2014.</small>
+			</section>
+
+			<section data-auto-animate>
+				<h2>
+					<span style="color: #999;">Testing</span>
+					<span style="color: #999;">on</span>
+					<span>Production</span>
+				</h2>
+				<div class="r-hstack justify-center">
+					<div data-id="box1" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+					<div data-id="box2" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+					<div data-id="box3" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+				</div>
+			</section>
+
+			<section data-auto-animate>
+				<h2>
+					<span style="color: #999;">Testing</span>
+					<span style="color: #999;">on</span>
+					<span>Production</span>
+				</h2>
+				<div class="r-hstack justify-center">
+					<div data-id="box1" style="background: #999; awidth: 50px; height: 50px; padding: 10px; margin: 10px; border-radius: 5px;">Development</div>
+					<div data-id="box2" style="background: #999; awidth: 50px; height: 50px; margin: 10px; border-radius: 5px;">Integrated</div>
+					<div data-id="box3" style="background: #999; awidth: 50px; height: 50px; margin: 10px; border-radius: 5px;">Production</div>
+				</div>
+			</section>
+
+
+
+			<section data-markdown>
+				The story of shadow transactions
+
+				(Can illustrate with the animations)
+
+				Independent to sync'ed. 
+
+				Functional OK, but on the volumes.
+
+				Order arrival, async, locking, 
+
+				Fully tested functionally. Let's go to production.
+			</section>
+
+			<section data-markdown>
+				notes
+
+				* what's prod? 
+				* what's testing?
+			</section>
+
+
+			<section>Slide 1</section>
+			<section>
+				<section>
+					Slide 2.1
+				</section>
+				<section>
+					Slide 2.2
+				</section>
+				<section>
+					Slide 2.3
+				</section>
+			</section>
+			<section data-auto-animate>
+				<h1 data-id="a1">Auto-Animate</h1>
+			</section>
+			<section data-auto-animate data-transition="none">
+				<h1 data-id="a1" style="margin-top: 100px; color: red;">Auto-Animate</h1>
+			</section>
+			<section data-auto-animate data-auto-animate-restart data-transition="none">
+				<h1>Auto-Agnimate</h1>
+			</section>
+			<section data-auto-animate>
+				<h1>Auto-Agnimate</h1>
+				<h1>This is nice actually</h1>
+			</section>
+
+			<section>
+				<pre><code data-line-numbers="3,8-10" data-trim>
+					<table>
+					<tr>
+						<td>Apples</td>
+						<td>$1</td>
+						<td>7</td>
+					</tr>
+					<tr>
+						<td>Oranges</td>
+						<td>$2</td>
+						<td>18</td>
+					</tr>
+					</table>
+			</code></pre>
+			</section>
+			<section>
+				<pre><code data-line-numbers="1|2|3" data-trim><script type="text/template">
+sealed class Either<out A, out B> {
+  data class Left<out A>(val a: A) : Either<A, Nothing>()
+  data class Right<out B>(val b: B) : Either<Nothing, B>()
+}
+</script></code></pre>
+			</section>
+
+			<section data-auto-animate>
+				<pre data-id="code-animation"><code data-trim data-line-numbers>
+    let planets = [
+      { name: 'mars', diameter: 6779 },
+    ]
+  </code></pre>
+			</section>
+			<section data-auto-animate>
+				<pre data-id="code-animation"><code data-trim data-line-numbers>
+    let planets = [
+      { name: 'mars', diameter: 6779 },
+      { name: 'earth', diameter: 12742 },
+      { name: 'jupiter', diameter: 139820 }
+    ]
+  </code></pre>
+			</section>
+			<section data-auto-animate>
+				<pre data-id="code-animation"><code data-trim data-line-numbers>
+    let circumferenceReducer = ( c, planet ) => {
+      return c + planet.diameter * Math.PI;
+    }
+
+    let planets = [
+      { name: 'mars', diameter: 6779 },
+      { name: 'earth', diameter: 12742 },
+      { name: 'jupiter', diameter: 139820 }
+    ]
+
+    let c = planets.reduce( circumferenceReducer, 0 )
+  </code></pre>
+			</section>
+
+		</div>
+	</div>
+
+	<script src="/dist/reveal.js"></script>
+	<script src="/plugin/notes/notes.js"></script>
+	<script src="/plugin/markdown/markdown.js"></script>
+	<script src="/plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+			//view: 'scroll',
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
