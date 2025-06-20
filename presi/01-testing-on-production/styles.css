@@ -1,0 +1,98 @@
+.box-pre {
+    background: #999; 
+    width: 5ch; 
+    /* height: 50px;  */
+    margin: 10px; 
+    border-radius: 5px; 
+    /* font-size: 10px; */
+}
+
+.box-revealed {
+    background: #999; 
+    width: 13ch;
+    padding: 10px; 
+    margin: 10px; 
+    border-radius: 5px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* color: white; */
+    /* text-align: center; */
+    padding: 10px;
+    /* font-size: 0.8em; */
+    z-index: 10; /* Ensure the footer is above other elements */
+}
+
+.qr-wrapper {
+    /* background: #999; */
+    display: inline-block;
+    padding: 0px;
+    /* margin: 0px;
+    border: 1px solid yellow;
+    padding: 10px;
+    background-color: #f0f0f0; */
+    background-color: #1a1a1a;
+}
+
+.img-qr {
+    /* border: 1px solid yellow; */
+    /* padding: 10px; */
+    filter: brightness(0) invert(0.8);
+}
+
+.invisible {
+    opacity: 0;
+}
+
+.arrow-svg {
+    padding-left: 3vh;
+    padding-right: 3vh;
+}
+
+.smaller {
+    font-size: 50%;
+}
+
+.image002 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: auto;
+    /* overflow: hidden; */
+    /* scrollbar-width: 0px; */
+    /* max-width: 100%;
+    max-height: 100%; */
+    opacity: 0;
+}
+
+/* .image002-inline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+} */
+
+/* .state-image002-fit-vertical .image002 {
+    width: auto;
+    height: 100%;
+} */
+
+body.state-image002 .image002 {
+    opacity: 1;
+}
+
+.outline-black {
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
