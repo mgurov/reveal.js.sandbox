@@ -28,6 +28,20 @@
     z-index: 10; /* Ensure the footer is above other elements */
 }
 
+.big-footer .footer img {
+    height: 50vh;
+}
+
+.mid-footer .footer img {
+    height: 30vh;
+}
+
+
+.no-footer .footer img {
+    opacity: 0;
+}
+
+
 .qr-wrapper {
     /* background: #999; */
     display: inline-block;
@@ -95,4 +109,16 @@ body.state-image002 .image002 {
 
 .outline-black {
     text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.dimmed {
+    opacity: .5;
+}
+
+.outline-white {
+    text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+.text-black {
+    color: #000;
 }
